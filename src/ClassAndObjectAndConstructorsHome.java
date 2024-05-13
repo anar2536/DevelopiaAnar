@@ -32,5 +32,6 @@ public class ClassAndObjectAndConstructorsHome {
         System.out.println(emp3.name);
         System.out.println(emp3.phone);
         System.out.println(emp3.salary);
+        System.out.println(emp1.name);
     }
 }
