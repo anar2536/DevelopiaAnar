@@ -39,5 +39,5 @@ public class BookEntity {
     private LocalDateTime registerDate;
 
     @ManyToMany(mappedBy = "books")
-    private Set<StudentEntity> students; // Öğrencilerle Many-to-Many ilişkisi
+    private Set<StudentEntity> students;
 }
