@@ -30,5 +30,5 @@ public class StudentEntity {
     private String phoneNumber;
 
     @ManyToMany
-    private Set<BookEntity> books; // Kitaplarla Many-to-Many ilişki
+    private Set<BookEntity> books;
 }
