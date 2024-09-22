@@ -1,8 +1,8 @@
 package anar.src.main.java.az.bizimkler.anar.entities;
 
 import java.time.LocalDateTime;
-
 import java.util.Set;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -39,5 +39,5 @@ public class BookEntity {
     private LocalDateTime registerDate;
 
     @ManyToMany(mappedBy = "books")
-    private Set<StudentEntity> students;
+    private Set<StudentEntity> students; // Öğrencilerle Many-to-Many ilişkisi
 }
