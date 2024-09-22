@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import anar.src.main.java.az.bizimkler.anar.entities.BookEntity;
-import anar.src.main.java.az.bizimkler.anar.repositories.BookRepository;
+import anar.src.main.java.az.bizimkler.anar.repository.BookRepository;
 
 @Service
 public class BookService {
@@ -13,10 +13,10 @@ public class BookService {
     private BookRepository bookRepository;
 
     public BookEntity saveBook(BookEntity book) {
-        return bookRepository.save(book);
+        return BookRepository.save(book);
     }
 
     public List<BookEntity> getAllBooks() {
-        return bookRepository.findAll();
+        return BookRepository.findAll();
     }
 }
