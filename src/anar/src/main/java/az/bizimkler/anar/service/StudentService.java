@@ -12,17 +12,14 @@ public class StudentService {
     @Autowired
     private StudentRepository studentRepository;
 
-    // Öğrenci kaydetme
     public StudentEntity saveStudent(StudentEntity student) {
         return studentRepository.save(student);
     }
 
-    // Tüm öğrencileri listeleme
     public List<StudentEntity> getAllStudents() {
         return studentRepository.findAll();
     }
 
-    // ID'ye göre öğrenci bulma
     public StudentEntity getStudentById(Long id) {
         return studentRepository.findById(id).orElse(null);
     }
